@@ -38,7 +38,7 @@ Este repositorio es un laboratorio práctico diseñado para dominar **React Cont
 1.  **Clonar el repo:**
 
     ```bash
-    git clone [https://github.com/ignacioDorigo/nombre-del-repo](https://github.com/ignacioDorigo/nombre-del-repo)
+    git clone https://github.com/ignacioDorigo/context
     ```
 
 2.  **Instalar las dependencias:**
