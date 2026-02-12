@@ -13,6 +13,7 @@ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
+  /* font-size: 62.5%; */
   /* 2 */
 }
 
@@ -388,4 +389,14 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+.contenedor {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 120rem;
+}
+
+a{
+  text-decoration: none;
 }
