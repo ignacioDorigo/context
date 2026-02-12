@@ -1,0 +1,4 @@
+.main__guest {
+    display: flex;
+    flex-direction: column;
+}
