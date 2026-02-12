@@ -1,11 +1,16 @@
 import React from "react";
 import "./NavGuest.css";
+import styled from "styled-components";
+
+const Logo = styled.h1`
+  color: #9991eb;
+`;
 
 export default function NavGuest() {
   return (
     <div className="header__bg">
       <header className="header contenedor">
-        <h1>Logo</h1>
+        <Logo>Logo</Logo>
         <nav className="nav">
           <a href="index.html">Inicio</a>
           <a href="index.html">Productos</a>

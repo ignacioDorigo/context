@@ -14,12 +14,23 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 2rem;
 }
-.nav a{
+
+@media (min-width: 768px) {
+    .nav {
+        gap: 2rem;
+    }
+}
+
+.nav a {
     color: #030203;
     font-weight: bold;
     padding: 1rem 0.5rem;
+    transition: all .3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #9991eb;
 }
 
 @media (width>=768px) {

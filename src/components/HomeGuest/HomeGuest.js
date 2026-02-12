@@ -7,6 +7,7 @@ import "./HomeGuest.css";
 
 const Titulo = styled.h1`
   text-align: center;
+  margin-top: 5rem;
 `;
 
 export default function HomeGuest() {

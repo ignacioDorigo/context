@@ -3,6 +3,7 @@ import { useFormik } from "formik";
 import "./LoginForm.css";
 import { validationSchema } from "./validacionLoginForm";
 import { UsuarioContext } from "../../context/UsuarioContext";
+import Swal from "sweetalert2";
 
 const valoresIniciales = {
   nombre: "",
@@ -14,8 +15,22 @@ export default function LoginForm() {
     initialValues: valoresIniciales,
     validationSchema: validationSchema,
     onSubmit: (formulario) => {
-      console.log(formulario);
-      login(formulario.nombre);
+      Swal.fire({
+        icon: "question",
+        title: "Login",
+        text: "Seguro que quieres iniciar sesión?",
+        showCancelButton: true,
+        showConfirmButton: true,
+        confirmButtonText: "Si, iniciar sesión",
+      }).then(() => {
+        login(formulario.nombre);
+        Swal.fire({
+          icon: "success",
+          title: "Exito",
+          text: "Login Exitoso",
+          showConfirmButton: true,
+        });
+      });
     },
   });
   return (
