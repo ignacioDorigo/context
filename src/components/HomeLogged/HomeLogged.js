@@ -1,5 +1,10 @@
 import React from "react";
+import NavLogged from "../NavLogged/NavLogged";
 
 export default function HomeLogged() {
-  return <div>HomeLogged</div>;
+  return (
+    <div>
+      <NavLogged></NavLogged>
+    </div>
+  );
 }
