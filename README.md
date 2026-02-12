@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# 🌐 React Context Practice: Auth Flow & Global State
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este repositorio es un laboratorio práctico diseñado para dominar **React Context API**. El objetivo es entender cómo gestionar el estado global de una aplicación, específicamente para un flujo de autenticación, evitando el _prop drilling_ y mejorando la arquitectura del proyecto.
 
-## Available Scripts
+## 🚀 Características del Proyecto
 
-In the project directory, you can run:
+- **Global Auth State:** Gestión centralizada del usuario mediante `UserContext`.
+- **Formik + Yup:** Login robusto con validaciones de esquemas en tiempo real.
+- **Renderizado Condicional:** Interfaz dinámica que reacciona según si el usuario está autenticado o no.
+- **Alertas Interactivas:** Feedback visual mediante SweetAlert2 para una mejor experiencia de usuario.
+- **Styled Components:** Arquitectura de estilos basada en componentes, modular y escalable.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Stack Tecnológico
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React:** Biblioteca principal y uso de Context API (`createContext`, `useContext`).
+- **Formik:** Gestión eficiente del estado del formulario de login.
+- **Yup:** Validación de esquemas (email, contraseña, etc.).
+- **Styled Components:** Estilos dinámicos y encapsulados mediante CSS-in-JS.
+- **SweetAlert2:** Notificaciones y alertas estéticas.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 Contenido del Laboratorio
 
-### `npm run build`
+| Sección          | Concepto Clave                        | Herramienta                         |
+| :--------------- | :------------------------------------ | :---------------------------------- |
+| **Global State** | Creación y provisión del contexto     | `Context API`                       |
+| **Auth Flow**    | Login y Logout con estado persistente | `UserContext.Provider`              |
+| **Validación**   | Validación de credenciales y feedback | `Formik` & `Yup`                    |
+| **UI/UX**        | Estilos dinámicos y alertas           | `Styled Components` & `SweetAlert2` |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔧 Configuración Local
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  **Clonar el repo:**
 
-### `npm run eject`
+    ```bash
+    git clone [https://github.com/ignacioDorigo/nombre-del-repo](https://github.com/ignacioDorigo/nombre-del-repo)
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2.  **Instalar las dependencias:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3.  **Lanzar el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 💡 ¿Por qué usar Context API?
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> Context API es la solución nativa de React para compartir datos que pueden considerarse "globales" (como el usuario actual, el tema o el idioma) sin tener que pasar props manualmente por cada nivel del árbol de componentes.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 👤 Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Ignacio Tomás Dorigo** - [GitHub](https://github.com/ignacioDorigo)
+- **LinkedIn** - [LinkedIn](https://www.linkedin.com/in/ignacio-dorigo-3aa267203)
