@@ -18,8 +18,7 @@ export default function NavLogged() {
           <a href="index.html">Inicio</a>
           <a href="index.html">Productos</a>
           <a href="index.html">Contacto</a>
-          <a
-            href="index.html"
+          <button className="cerrar-sesion__button"
             onClick={() => {
               Swal.fire({
                 icon: "question",
@@ -36,12 +35,14 @@ export default function NavLogged() {
                   text: "Se ha cerrado la sesión correctamente",
                   showConfirmButton: true,
                   confirmButtonText: "Cerrar",
-                }).then(() => logout());
+                }).then(() => {
+                  logout();
+                });
               });
             }}
           >
             Cerrar Sesión
-          </a>
+          </button>
         </nav>
       </header>
     </div>

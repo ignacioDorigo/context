@@ -42,3 +42,21 @@
         flex-direction: row;
     }
 }
+
+.cerrar-sesion__button {
+    border-radius: 5px;
+    color: #404040;
+    border: 2px solid #404040;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #FFF;
+    transition: all .3s ease-in-out;
+}
+
+.cerrar-sesion__button:hover {
+    background-color: #9991eb;
+    border-color: #9991eb;
+    color: #FFF;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+
+}
