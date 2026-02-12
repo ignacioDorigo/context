@@ -20,7 +20,7 @@ export default function LoginForm() {
   });
   return (
     <form className="login-form" onSubmit={formik.handleSubmit}>
-      <h2>Formulario de Login</h2>
+      <h2>Login</h2>
       <p>Por favor para continuar ingresa tu nombre</p>
       <div className="form__campo">
         <label className="form__label" htmlFor="nombre">
